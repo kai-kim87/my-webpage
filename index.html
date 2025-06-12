@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>무선 Tally 시스템 소개</title>
+  <style>
+    /* Reset & 기본 */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+      background: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    a { text-decoration: none; }
+
+    /* 헤더 */
+    header {
+      position: sticky;
+      top: 0;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 10;
+    }
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #0078e7;
+    }
+    nav ul {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+    }
+    nav a {
+      color: #0078e7;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .top-buy {
+      background: #e84949;
+      color: #fff;
+      padding: 0.6rem 1.2rem;
+      border-radius: 4px;
+      font-weight: 700;
+      margin-left: 1.5rem;
+    }
+    .top-buy:hover {
+      background: #c03939;
+    }
+
+    /* 메인 컨텐츠 */
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    details {
+      background: #fff;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 1.5rem;
+      overflow: hidden;
+    }
+    summary {
+      padding: 1.2rem 1rem;
+      font-size: 1.4rem;
+      font-weight: 700;
+      background: #e8f1fc;
+      cursor: pointer;
+      position: relative;
+    }
+    summary::after {
+      content: "▸";
+      position: absolute;
+      right: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: transform 0.2s ease;
+      font-size: 1.2rem;
+    }
+    details[open] summary::after {
+      transform: translateY(-50%) rotate(90deg);
+    }
+    .content {
+      padding: 1rem;
+      animation: fadeIn 0.3s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+    .content h4 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-top: 1rem;
+    }
+    .content ul {
+      margin: 0.6rem 0 1rem 1.2rem;
+    }
+    .content ul li {
+      margin-bottom: 0.6rem;
+    }
+    .content img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 1rem 0;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    .price-info {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-top: 0.5rem;
+    }
+    .buy-section {
+      margin-top: 1rem;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>무선 Tally 시스템</h1>
+    <nav>
+      <ul>
+        <li><a href="#section1">Tally란?</a></li>
+        <li><a href="#section2">장착 시 장점</a></li>
+        <li><a href="#section3">미장착 위험</a></li>
+        <li><a href="#section4">실제 사용 예시</a></li>
+        <li><a href="#section5">가격정보</a></li>
+      </ul>
+    </nav>
+    <a href="https://ko.aliexpress.com/item/1005006424630494.html"
+       class="top-buy" target="_blank">구매하기</a>
+  </header>
+
+  <main>
+    <details id="section1" open>
+      <summary>1. 카메라 Tally란?</summary>
+      <div class="content">
+        <p>Tally는 ‘현재 방송 중인 카메라’를 시각·청각으로 알려주는 표시 장치입니다.</p>
+        <p>주로 카메라 상단에 장착되어, 촬영 중인 기기를 즉시 식별하게 해 줍니다.</p>
+      </div>
+    </details>
+
+    <details id="section2">
+      <summary>2. Tally 장착 시 장점</summary>
+      <div class="content">
+        <h4>2.1 명확한 촬영 상황 인지</h4>
+        <ul>
+          <li><strong>즉각적인 확인</strong><br>
+            카메라 감독이 자신이 촬영 중인 카메라인지를 바로 알 수 있어 안정적인 촬영이 가능</li>
+          <li><strong>자신감 있는 워크플로우</strong><br>
+            어떤 카메라가 방송으로 나가는지 명확히 알기에, 과감하고 정확한 앵글 전환 수행</li>
+        </ul>
+
+        <h4>2.2 촬영 집중력 증가</h4>
+        <ul>
+          <li><strong>혼란 최소화</strong><br>
+            방송 중인 카메라 헷갈림 방지 → 불필요한 움직임·프레이밍 실수 감소</li>
+          <li><strong>품질 향상</strong><br>
+            시각적 혼란이 줄어들어 전체적인 촬영 퀄리티 상승</li>
+        </ul>
+
+        <h4>2.3 방송 사고 예방</h4>
+        <ul>
+          <li><strong>전환 실수 방지</strong><br>
+            잘못된 카메라 전환으로 인한 ‘빈 화면 송출’이나 ‘원치 않는 장면 송출’ 방지</li>
+          <li><strong>긴급 상황 대응</strong><br>
+            돌발 상황에서도 어떤 카메라가 LIVE 상태인지 즉시 파악 → 혼선 최소화</li>
+        </ul>
+      </div>
+    </details>
+
+    <details id="section3">
+      <summary>3. Tally 미장착 시 불편·위험 요소</summary>
+      <div class="content">
+        <h4>3.1 혼란 및 스트레스 증가</h4>
+        <ul>
+          <li><strong>지속적 긴장</strong><br>
+            내가 방송 중인지 아리송 → 과도한 긴장 상태 유지</li>
+          <li><strong>프레이밍 오류</strong><br>
+            잘못된 앵글·움직임으로 방송 품질 저하</li>
+        </ul>
+
+        <h4>3.2 방송 사고 위험 상승</h4>
+        <ul>
+          <li><strong>잘못된 송출</strong><br>
+            송출되어서는 안 될 화면이 나가거나, 중요한 장면이 누락될 수 있음</li>
+          <li><strong>신뢰도 손상</strong><br>
+            잦은 실수는 방송사 및 제작사의 이미지 훼손으로 이어짐</li>
+        </ul>
+
+        <h4>3.3 업무 효율성 저하</h4>
+        <ul>
+          <li><strong>집중력 저하</strong><br>
+            불필요한 긴장 → 전반적인 촬영 효율성 감소</li>
+          <li><strong>의사소통 오류</strong><br>
+            긴급 상황에서 감독 간 혼선 발생 → 연쇄적 방송 사고 초래 가능</li>
+        </ul>
+      </div>
+    </details>
+
+    <details id="section4">
+      <summary>4. 실제 사용 예시</summary>
+      <div class="content">
+        <h4>1) 핸드헬드 카메라 리그</h4>
+        <img src="1.png" alt="핸드헬드 카메라 리그에 장착된 수신기 및 Tally 라이트">
+      </div>
+    </details>
+
+    <details id="section5">
+      <summary>5. 가격 및 구매 정보</summary>
+      <div class="content">
+        <p class="price-info">가격: ₩1,354,673</p>
+        <div class="buy-section">
+          <a href="https://ko.aliexpress.com/item/1005006424630494.html"
+             class="top-buy" target="_blank">구매하러 가기</a>
+        </div>
+      </div>
+    </details>
+  </main>
+</body>
+</html>
